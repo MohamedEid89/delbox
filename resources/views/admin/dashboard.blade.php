@@ -9,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="/backend/assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/backend/assets/images/favicon.png') }}" type="image/x-icon">
-    <title>Layout Light | Cuba - Premium Admin Template By Pixelstrap</title>
+   <title>{{ config('app.name') }} Admin Dashboard</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -259,7 +259,7 @@
                   <li><a href="../template/mail-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
                   <li><a href="../template/task.html"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
                   <li><a href="../template/add-user.html"><i data-feather="settings"></i><span>Settings</span></a></li>
-                  <li><a href="../template/login.html"><i data-feather="log-in"> </i><span>Log out</span></a></li>
+                  <li><a href="{{ route('admin.logout')}}"><i data-feather="log-in"> </i><span>Log out</span></a></li>
                 </ul>
               </li>
             </ul>
